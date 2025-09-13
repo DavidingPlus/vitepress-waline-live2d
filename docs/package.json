@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "vue": "^3.4.21",
-    "vitepress": "^1.0.2",
+    "vitepress": "^2.0.0-alpha.6",
     "vitepress-theme-website": "workspace:*"
   }
 }
