@@ -9,8 +9,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.ts'),
-      name: 'VitepressThemeWebsite',
-      fileName: format => `vitepress-theme-website.${format}.js`,
+      name: 'VitepressWalineLive2d',
+      fileName: format => `vitepress-waline-live2d.${format}.js`,
       formats: ['es', 'cjs']
     },
     rollupOptions: {

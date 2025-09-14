@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import { useWaline, useLive2d } from 'vitepress-theme-website'
+import { useWaline, useLive2d } from 'vitepress-waline-live2d'
 import { useRoute } from 'vitepress'
 
 export default {
