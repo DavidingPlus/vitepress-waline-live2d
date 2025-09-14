@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import { useWaline } from 'vitepress-theme-website'
+import { useWaline, useLive2d } from 'vitepress-theme-website'
 import { useRoute } from 'vitepress'
 
 export default {
@@ -13,8 +13,10 @@ export default {
   setup() {
     useWaline({
       serverURL: 'https://waline.xinlei3166.com',
-      useRoute
+      vitepressUseRoute: useRoute
     })
-    // useLive2d()
+    useLive2d({
+      vitepressUseRoute: useRoute
+    })
   }
 }

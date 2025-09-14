@@ -5,12 +5,12 @@ import Waline from './components/Waline'
 
 export interface WalineOptions extends WalineInitOptions {
   selector?: string // 非Waline参数，el挂载的容器，默认.VPDoc .content-container。
-  useRouteVitepress: () => Route
+  vitepressUseRoute: () => Route
 }
 
 export const useWaline = (walineOptions: WalineOptions) => {
   let waline: WalineInstance
-  const route = walineOptions.useRouteVitepress()
+  const route = walineOptions.vitepressUseRoute()
 
   onMounted(() => {
     updateWaline()

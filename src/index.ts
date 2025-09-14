@@ -1,2 +1,2 @@
 export * from './waline'
-// export * from './live2d'
+export * from './live2d'
