@@ -1,15 +1,16 @@
 import type { WalineInitOptions, WalineInstance } from '@waline/client'
 import { onMounted, onBeforeUnmount, watch } from 'vue'
-import { useRoute } from 'vitepress'
+import type { Route } from 'vitepress'
 import Waline from './components/Waline'
 
 export interface WalineOptions extends WalineInitOptions {
   selector?: string // 非Waline参数，el挂载的容器，默认.VPDoc .content-container。
+  vitepressUseRoute: () => Route
 }
 
 export const useWaline = (walineOptions: WalineOptions) => {
   let waline: WalineInstance
-  const route = useRoute()
+  const route = walineOptions.vitepressUseRoute()
 
   onMounted(() => {
     updateWaline()

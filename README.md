@@ -1,8 +1,8 @@
-# vitepress-theme-website
+# vitepress-waline-live2d
 
 ## 简介
 
-`vitepress-theme-website` 是一个基于 `Vitepress` 的主题插件，集成评论[Waline](https://waline.js.org)、[Live2D看板娘](https://www.live2d.com/zh-CHS/)。
+`vitepress-waline-live2d` 是一个基于 `Vitepress` 的主题插件，集成评论[Waline](https://waline.js.org)、[Live2D看板娘](https://www.live2d.com/zh-CHS/)。
 
 [查看Demo](https://xinlei3166.github.io/about/)
 
@@ -12,9 +12,9 @@
 ## 安装
 
 ```bash
-npm install -D vitepress-theme-website
-yarn add -D vitepress-theme-website
-pnpm install -D vitepress-theme-website
+npm install -D vitepress-waline-live2d
+yarn add -D vitepress-waline-live2d
+pnpm install -D vitepress-waline-live2d
 ```
 
 ## Waline 用法
@@ -23,7 +23,7 @@ pnpm install -D vitepress-theme-website
 
 ```js
 import DefaultTheme from 'vitepress/theme'
-import { useWaline } from 'vitepress-theme-website'
+import { useWaline } from 'vitepress-waline-live2d'
 
 export default {
   ...DefaultTheme,
@@ -42,7 +42,7 @@ export default {
 
 ```js
 import DefaultTheme from 'vitepress/theme'
-import { useLive2d } from 'vitepress-theme-website'
+import { useLive2d } from 'vitepress-waline-live2d'
 
 export default {
   ...DefaultTheme,
@@ -55,7 +55,7 @@ export default {
 
 由于 `live2d.js` 打包后会导致模型显示不全，需要用cdn方式引用。
 
-`live2d.js` [下载地址](https://github.com/xinlei3166/vitepress-theme-website/blob/main/docs/public/live2d.js)，下载完成后放在和 `.vitepress` 平级的 `public` 目录中。
+`live2d.js` [下载地址](https://github.com/DavidingPlus/vitepress-waline-live2d/blob/main/docs/public/live2d.js)，下载完成后放在和 `.vitepress` 平级的 `public` 目录中。
 
 `.vitepress/config.js` 文件中增加如下配置：
 
@@ -94,4 +94,4 @@ useLive2d({
 
 
 ### 感谢
-`vitepress-theme-website@useLive2d` 参考了 [vuepress-plugin-helper-live2d](https://github.com/JoeyBling/vuepress-plugin-helper-live2d)
+`vitepress-waline-live2d@useLive2d` 参考了 [vuepress-plugin-helper-live2d](https://github.com/JoeyBling/vuepress-plugin-helper-live2d)

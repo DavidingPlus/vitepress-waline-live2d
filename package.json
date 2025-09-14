@@ -1,11 +1,11 @@
 {
-  "name": "vitepress-theme-website",
+  "name": "vitepress-waline-live2d",
   "version": "1.0.8",
   "type": "module",
   "description": "vitepress plugin for website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xinlei3166/vitepress-theme-website"
+    "url": "https://github.com/DavidingPlus/vitepress-waline-live2d"
   },
   "keywords": [
     "vitepress",
@@ -15,33 +15,36 @@
     "live2d"
   ],
   "bugs": {
-    "url": "https://github.com/xinlei3166/vitepress-theme-website/issues"
+    "url": "https://github.com/DavidingPlus/vitepress-waline-live2d/issues"
   },
-  "homepage": "https://github.com/xinlei3166/vitepress-theme-website#readme",
-  "author": "君惜",
+  "homepage": "https://github.com/DavidingPlus/vitepress-waline-live2d#readme",
+  "author": "DavidingPlus",
   "license": "MIT",
   "files": [
     "dist"
   ],
-  "main": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "dist/vitepress-waline-live2d.cjs.js",
+  "module": "dist/vitepress-waline-live2d.es.js",
+  "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs"
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/vitepress-waline-live2d.es.js",
+      "require": "./dist/vitepress-waline-live2d.cjs.js"
     },
-    "./dist/*": "./dist/*",
     "./waline": {
-      "types": "./dist/waline/index.d.ts",
-      "import": "./dist/waline/index.mjs"
+      "types": "./dist/types/waline/components/Waline.d.ts",
+      "import": "./dist/vitepress-waline-live2d.es.js",
+      "require": "./dist/vitepress-waline-live2d.cjs.js"
     },
     "./live2d": {
-      "types": "./dist/live2d/index.d.ts",
-      "import": "./dist/live2d/index.mjs"
+      "types": "./dist/types/live2d/components/Live2dComponent.vue.d.ts",
+      "import": "./dist/vitepress-waline-live2d.es.js",
+      "require": "./dist/vitepress-waline-live2d.cjs.js"
     }
   },
   "scripts": {
-    "build": "unbuild",
+    "build": "vite build",
     "stub": "unbuild --stub",
     "test": "jest",
     "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx,.vue",
@@ -55,6 +58,7 @@
     "@types/node": "^20.12.3",
     "@typescript-eslint/eslint-plugin": "^7.5.0",
     "@typescript-eslint/parser": "^7.5.0",
+    "@vitejs/plugin-vue": "^6.0.1",
     "@yunquejs/release": "^0.1.9",
     "conventional-changelog-cli": "^4.1.0",
     "eslint": "^8.57.0",
@@ -69,7 +73,10 @@
     "tsx": "^4.7.1",
     "typescript": "^5.4.3",
     "unbuild": "^2.0.0",
-    "vitepress": "^1.0.2",
+    "vite": "^7.1.5",
+    "vite-plugin-css-injected-by-js": "^3.5.2",
+    "vite-plugin-dts": "^4.5.4",
+    "vitepress": "^2.0.0-alpha.6",
     "vitest": "^1.4.0",
     "vue": "^3.4.21",
     "vue-eslint-parser": "^9.4.2"

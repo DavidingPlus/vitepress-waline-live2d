@@ -65,12 +65,12 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/xinlei3166/vitepress-theme-website/edit/main/docs/:path',
+      pattern: 'https://github.com/DavidingPlus/vitepress-waline-live2d/edit/master/docs/:path',
       text: '在 GitHub 上编辑此页'
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/xinlei3166/vitepress-theme-website' }
+      { icon: 'github', link: 'https://github.com/DavidingPlus/vitepress-waline-live2d' }
     ],
 
     footer: {

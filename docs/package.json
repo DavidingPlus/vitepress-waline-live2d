@@ -1,5 +1,5 @@
 {
-  "name": "vitepress-theme-website-docs",
+  "name": "vitepress-waline-live2d-docs",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -11,7 +11,7 @@
   "dependencies": {},
   "devDependencies": {
     "vue": "^3.4.21",
-    "vitepress": "^1.0.2",
-    "vitepress-theme-website": "workspace:*"
+    "vitepress": "^2.0.0-alpha.6",
+    "vitepress-waline-live2d": "workspace:*"
   }
 }
