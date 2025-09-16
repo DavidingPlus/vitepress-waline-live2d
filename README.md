@@ -12,9 +12,9 @@
 ## 安装
 
 ```bash
-npm install -D vitepress-waline-live2d
-yarn add -D vitepress-waline-live2d
-pnpm install -D vitepress-waline-live2d
+npm install -D @davidingplus/vitepress-waline-live2d
+yarn add -D @davidingplus/vitepress-waline-live2d
+pnpm install -D @davidingplus/vitepress-waline-live2d
 ```
 
 ## Waline 用法

@@ -1,6 +1,6 @@
 {
-  "name": "vitepress-waline-live2d",
-  "version": "1.0.8",
+  "name": "@davidingplus/vitepress-waline-live2d",
+  "version": "1.0.9",
   "type": "module",
   "description": "vitepress plugin for website",
   "repository": {
