@@ -1,4 +1,4 @@
-## [1.0.9](https://github.com/DavidingPlus/vitepress-waline-live2d/pull/1) (2025-09-14)
+## [1.1.0](https://github.com/DavidingPlus/vitepress-waline-live2d/pull/1) (2025-09-14)
 
 在通过 `npm` 或 `pnpm` 安装原插件后，如果直接对网站进行打包，可能会遇两类常见错误：
 
