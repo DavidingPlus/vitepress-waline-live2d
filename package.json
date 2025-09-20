@@ -26,24 +26,24 @@
   "files": [
     "dist"
   ],
-  "main": "dist/vitepress-waline-live2d.cjs.js",
-  "module": "dist/vitepress-waline-live2d.es.js",
+  "main": "dist/waline-live2d.cjs.js",
+  "module": "dist/waline-live2d.es.js",
   "types": "dist/types/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/types/index.d.ts",
-      "import": "./dist/vitepress-waline-live2d.es.js",
-      "require": "./dist/vitepress-waline-live2d.cjs.js"
+      "import": "./dist/waline-live2d.es.js",
+      "require": "./dist/waline-live2d.cjs.js"
     },
     "./waline": {
       "types": "./dist/types/waline/components/Waline.d.ts",
-      "import": "./dist/vitepress-waline-live2d.es.js",
-      "require": "./dist/vitepress-waline-live2d.cjs.js"
+      "import": "./dist/waline-live2d.es.js",
+      "require": "./dist/waline-live2d.cjs.js"
     },
     "./live2d": {
       "types": "./dist/types/live2d/components/Live2dComponent.vue.d.ts",
-      "import": "./dist/vitepress-waline-live2d.es.js",
-      "require": "./dist/vitepress-waline-live2d.cjs.js"
+      "import": "./dist/waline-live2d.es.js",
+      "require": "./dist/waline-live2d.cjs.js"
     }
   },
   "scripts": {

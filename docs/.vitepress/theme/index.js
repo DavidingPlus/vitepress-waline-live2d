@@ -1,5 +1,5 @@
 import DefaultTheme from 'vitepress/theme'
-import { useWaline, useLive2d } from 'vitepress-waline-live2d'
+import { useWaline, useLive2d } from '@davidingplus/vitepress-waline-live2d'
 import { useRoute } from 'vitepress'
 
 export default {
@@ -16,7 +16,24 @@ export default {
       vitepressUseRoute: useRoute
     })
     useLive2d({
-      vitepressUseRoute: useRoute
+      vitepressUseRoute: useRoute,
+      enable: true,
+      model: {
+        url: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/hibiki/hibiki.model.json'
+      },
+      display: {
+        position: 'right',
+        width: '135px',
+        height: '300px',
+        xOffset: '35px',
+        yOffset: '5px'
+      },
+      mobile: {
+        show: true
+      },
+      react: {
+        opacity: 0.8
+      }
     })
   }
 }

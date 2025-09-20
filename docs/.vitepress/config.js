@@ -8,10 +8,10 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: 'without-subfolders',
 
-  // base: '/',
+  base: '/vitepress-waline-live2d',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-    ['script', { src: '/live2d.js' }],
+    ['script', { src: '/vitepress-waline-live2d/live2d.js' }],
     // ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }]
   ],
 
@@ -46,7 +46,8 @@ export default defineConfig({
     ],
 
     // sidebar
-    sidebar: { '/guide/': [
+    sidebar: {
+      '/guide/': [
         {
           text: '文档',
           collapsible: false,
@@ -75,7 +76,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-present 君惜'
+      copyright: 'Copyright © 2025-present DavidingPlus'
     }
   }
 })
