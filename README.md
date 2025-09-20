@@ -4,7 +4,7 @@
 
 `vitepress-waline-live2d` 是一个基于 `Vitepress` 的主题插件，集成评论[Waline](https://waline.js.org)、[Live2D看板娘](https://www.live2d.com/zh-CHS/)。
 
-[查看 Demo](https://b1.davidingplus.cn/guide/)
+[查看 Demo](https://davidingplus.github.io/vitepress-waline-live2d/)
 
 ## 提示
 已支持 `vitepress@2.0.0-alpha.6` 版本。
@@ -78,6 +78,7 @@ export default {
 
 ```js
 useLive2d({
+  vitepressUseRoute: useRoute,
   enable: true,
   model: {
     url: 'https://raw.githubusercontent.com/iCharlesZ/vscode-live2d-models/master/model-library/hibiki/hibiki.model.json'
